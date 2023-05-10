@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">AdoPaws</string>
+
+    <string name="email">Correo electrónico</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="iniciarSesion">Iniciar Sesión</string>
+    <string name="pregunta">¿No tienes cuenta?</string>
+    <string name="regist"><u>Registrate</u></string>
+    <string name="ingresarFacebook">Ingresar con Facebook</string>
+    <string name="ingresarGoogle">Ingresar con Google</string>
+
+    <string name="dialogo">Crea una cuenta de AdoPaws</string>
+    <string name="ingresa">Ingresa tu nombre</string>
+    <string name="usuario">Nombre de usuario</string>
+    <string name="crearCuenta">Crear cuenta</string>
+    <string name="pregunta2">¿Ya tienes una cuenta?</string>
+    <string name="iniciaSesión"><u>Inicia sesión</u></string>
+
+    <string name="filter">Filtrar por</string>
+
+    <string name="nombre_mascota">Nombre mascota</string>
+    <string name="sexo_mascota">Sexo</string>
+    <string name="perfil">Perfil</string>
+    <string name="historia">Historia</string>
+    <string name="salud">Salud</string>
+    <string name="contacto">Contacto</string>
+    <string name="iniciarChat">Iniciar Chat</string>
+
+    <string name="fecha_nacimiento">Ingrese su fecha de nacimiento</string>
+
+    <string name="configuracionGeneral">Configuración general</string>
+
+    <string name="facebook_app_id">1234</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+
+    <string name="mascotas_interes"><u>Mascotas de\ninterés</u></string>
+    <string name="mascotas_adopcion"><u>Mascotas en\nadopción</u></string>
+
+    <string name="cuenta">Cuenta</string>
+    <string name="perfil_usuario">Perfil de usuario</string>
+    <string name="idioma_aplicacion">Idioma de la aplicación</string>
+    <string name="ayuda">Ayuda</string>
+
+    <string name="cambiar_correo">Cambiar correo electrónico</string>
+    <string name="cambiar_contraseña">Cambiar contraseña</string>
+    <string name="cambiar_imagen_perfil">Cambiar imagen de perfil</string>
+    <string name="cambiar_nombre">Cambiar nombre</string>
+    <string name="idioma_elegido">Español (idioma del teléfono)</string>
+    <string name="cambiar_tamaño_letra">Cambiar tamaño de letra</string>
+    <string name="centros_ayuda">Centros de ayuda</string>
+    <string name="contactanos">Contáctanos</string>
+    <string name="politica_privacidad">Política de privacidad</string>
+
+    <string name="cerrar_sesion">Cerrar sesión</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="confirm_logout">¿Estás seguro de que\nquieres cerrar sesión?</string>
+
+    <string name="question_notfound">¿Ninguno de ellos era el que buscabas? Entonces será mejor que generes un reporte</string>
+    <string name="seleccion_reporte">Selecciona de qué\n necesitas el reporte</string>
+
+    <string name="encotre_m">Encontré una mascota</string>
+    <string name="perdi_m">Se perdió mi mascota</string>
+
+    <string name="buscarMascota">Buscar mascota</string>
+    <string name="perdidos">Perdidos</string>
+    <string name="encontrados">Encontrados</string>
+
+    <string name="generarReporte">Generar reporte</string>
+    <string name="encabezado1">Rellena el formulario con la información necesaria sobre tu mascota</string>
+    <string name="encabezado2">Rellena el formulario con la información necesaria sobre el animal encontrado</string>
+    <string name="descripcion">Descripción general</string>
+    <string name="adjuntar_foto">Adjuntar foto</string>
+    <string name="donde_encontro">Dónde se encontró</string>
+    <string name="donde_perdido">Dónde se perdió</string>
+    <string name="cuando_encontro">Cuándo se encontró</string>
+    <string name="cuando_perdido">Cuándo se perdió</string>
+    <string name="nombre_mascota2">Nombre de la mascota</string>
+    <string name="numero_telefono">Número de celular</string>
+    <string name="reportar">Reportar</string>
+    <string name="msj_reporte">Después de reportar, se notificará a todos los\nusuarios de la zona.</string>
+
+    <string name="reporte_creado">Tu reporte se ha generado\ncon exito ¡suerte!</string>
+    <string name="btn_aceptar">Aceptar</string>
+
+
+    <string name="elige_cuenta">Elige una cuenta</string>
+    <string name="continuar">Para continuar usando AdoPaws</string>
+    <string name="agregar_cuenta">Agregar otra cuenta</string>
+    <string name="msj_eu">Para continuar, Google compartir tu nombre, dirección\nde correo electrónico y foto de perfil con AdoPaw. Antes\nde usar esta app, consulta su política de privacidad y las\ncondiciones del servicio</string>
+
+
+    <string name="conversaciones">Conversaciones</string>
+    <string name="comunidades">Comunidades</string>
+    <string name="privados">Privados</string>
+</resources>

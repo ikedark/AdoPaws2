@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige"
+    tools:context=".Login">
+
+    <!--ImageView Logo-->
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo_texto"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"/>
+    <!--EditText Correo electrónico-->
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="@string/email"
+        android:background="@drawable/round_text"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:paddingHorizontal="@dimen/input_margin"
+        android:textColor="@color/black"
+        />
+    <!--EditText contraseña-->
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="@string/contraseña"
+        android:background="@drawable/round_text"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:paddingHorizontal="@dimen/input_margin"
+        android:textColor="@color/black"/>
+    <!--Botón Iniciar sesión-->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:text="@string/iniciarSesion"
+        android:background="@drawable/round_butonlogin"
+        android:textColor="@color/white"
+        android:fontFamily="@font/baloo"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        />
+
+    <!--LinearLayout que contiene:-->
+    <!--TextView que pregunta si estas registrado-->
+    <!--Botón Registrarte que te redirige al layout register-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--TextView que pregunta si estas registrado-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/pregunta"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="105dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <!--Boton Registrate que te redirige al layout register-->
+        <Button
+            android:id="@+id/btn_registrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/regist"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    </LinearLayout>
+
+    <!--Botón Login de Facebook-->
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+
+    <!--Botón SignIn de Google-->
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
