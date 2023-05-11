@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
-import android.widget.ImageView
 
 class Encontrar_Mascota : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +12,6 @@ class Encontrar_Mascota : AppCompatActivity() {
         setContentView(R.layout.activity_encontrar_mascota)
 
         val buttonPerdidos: Button = findViewById(R.id.btn_perdidos)
-        val emergenteGato: ImageView = findViewById(R.id.iv_mascotaGato)
 
         buttonPerdidos.setOnClickListener(){
             var intent: Intent = Intent(this,Encontrar_Mascota::class.java)
@@ -60,25 +58,17 @@ class Encontrar_Mascota : AppCompatActivity() {
 
             dialog.show()
 
-            val btnEncontre : Button? = dialog.findViewById(R.id.btnEncontre)
-
-            val btnPerdi: Button? = dialog.findViewById(R.id.btnPerdi)
-
-            if (btnPerdi != null) {
-                btnPerdi.setOnClickListener {
-                    val intent: Intent = Intent(this, generarReporte::class.java)
-                    startActivity(intent)
-                    dialog.dismiss()
-                }
+            dialog.findViewById<Button?>(R.id.btnPerdi)?.setOnClickListener {
+                val intent: Intent = Intent(this, generarReporte::class.java)
+                startActivity(intent)
+                dialog.dismiss()
             }
 
-            if (btnEncontre != null) {
-                btnEncontre.setOnClickListener {
-//                    finish()
-                    val intent: Intent = Intent(this, generarReporte2::class.java)
-                    startActivity(intent)
-                    dialog.dismiss()
-                }
+            dialog.findViewById<Button?>(R.id.btnEncontre)?.setOnClickListener {
+                //                    finish()
+                val intent: Intent = Intent(this, generarReporte2::class.java)
+                startActivity(intent)
+                dialog.dismiss()
             }
         }
     }

@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "573074286016",
-    "firebase_url": "https://adopaws2-434a6-default-rtdb.firebaseio.com",
-    "project_id": "adopaws2-434a6",
-    "storage_bucket": "adopaws2-434a6.appspot.com"
+    "project_number": "712399890774",
+    "firebase_url": "https://prueba-4912d-default-rtdb.firebaseio.com",
+    "project_id": "prueba-4912d",
+    "storage_bucket": "prueba-4912d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:573074286016:android:a2aff8bed03d9673461425",
+        "mobilesdk_app_id": "1:712399890774:android:68b99f713df4f2d2414ef7",
         "android_client_info": {
           "package_name": "mx.edu.potros.adopaws2"
         }
       },
       "oauth_client": [
         {
-          "client_id": "573074286016-st0fhhbueu3s9ncdqj1q2lq6ku1ahfl6.apps.googleusercontent.com",
+          "client_id": "712399890774-v6ajrqtpif8qq5m4eicr3r9eogtmruir.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAW0o-nbUzzhrxEyhtQGvr0bNMNmQzoJao"
+          "current_key": "AIzaSyCPormIhfEmX2WvmVggEYOX4NOw-6Sjp8k"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "573074286016-st0fhhbueu3s9ncdqj1q2lq6ku1ahfl6.apps.googleusercontent.com",
+              "client_id": "712399890774-v6ajrqtpif8qq5m4eicr3r9eogtmruir.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -33,12 +33,7 @@ class home : AppCompatActivity() {
 
 //        val btnLogout: Button = findViewById(R.id.btnLogout)
 
-        val bundle = intent.extras
 
-        if (bundle != null){
-            val name = bundle.getString("name")
-            val email = bundle.getString("email")
-        }
 
 //        btnLogout.setOnClickListener {
 //            finish()

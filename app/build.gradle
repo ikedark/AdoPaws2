@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace 'mx.edu.potros.adopaws2'
+        namespace 'mx.edu.potros.adopaws2'
     compileSdk 33
 
     defaultConfig {

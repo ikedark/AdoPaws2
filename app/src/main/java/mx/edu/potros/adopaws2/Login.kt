@@ -19,5 +19,12 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
             val intent: Intent = Intent(this, registrar::class.java)
             startActivity(intent)
         }
+
+        val btnInicio: Button = findViewById(R.id.btn_login)
+
+        btnInicio.setOnClickListener {
+            val intent: Intent = Intent(this, home::class.java)
+            startActivity(intent)
+        }
     }
 }

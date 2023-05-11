@@ -77,25 +77,7 @@ class generarReporte : AppCompatActivity() {
 
         btn_guardar.setOnClickListener {
             saveInfoPet()
-            val builder = AlertDialog.Builder(this@generarReporte)
 
-            val view = layoutInflater.inflate(R.layout.dialog_reporte_creado, null)
-
-            builder.setView(view)
-
-            val dialog = builder.create()
-
-            dialog.show()
-
-            val btnAceptar: Button? = dialog.findViewById(R.id.btnAceptar)
-
-            if (btnAceptar != null) {
-                btnAceptar.setOnClickListener {
-                    val intent: Intent = Intent(this, Encontrar_Mascota::class.java)
-                    startActivity(intent)
-                    dialog.dismiss()
-                }
-            }
         }
 
         fechaR  = findViewById(R.id.fechaP)
@@ -104,9 +86,6 @@ class generarReporte : AppCompatActivity() {
 
 
         val btnRegresar : ImageButton = findViewById(R.id.btn_Regresar2)
-
-
-
 
 
         btnRegresar.setOnClickListener {
