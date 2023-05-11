@@ -46,24 +46,23 @@
     <!--Botón Iniciar sesión-->
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="140dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/iniciarSesion"
-        android:background="@drawable/round_butonlogin"
-        android:textColor="@color/white"
-        android:fontFamily="@font/baloo"
-        android:textAllCaps="false"
-        android:textSize="18sp"
-        android:textAlignment="center"
         android:layout_gravity="center"
         android:layout_marginTop="35dp"
-        />
+        android:background="@drawable/round_butonlogin"
+        android:fontFamily="@font/baloo"
+        android:text="@string/iniciarSesion"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
     <!--LinearLayout que contiene:-->
     <!--TextView que pregunta si estas registrado-->
     <!--Botón Registrarte que te redirige al layout register-->
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <!--TextView que pregunta si estas registrado-->
@@ -92,14 +91,7 @@
     </LinearLayout>
 
     <!--Botón Login de Facebook-->
-    <com.facebook.login.widget.LoginButton
-        android:id="@+id/login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textSize="14sp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp" />
+
 
 
 

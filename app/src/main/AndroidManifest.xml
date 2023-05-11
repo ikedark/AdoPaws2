@@ -34,11 +34,7 @@
         <activity
             android:name=".Login"
             android:exported="true"
-<<<<<<< HEAD
             android:theme="@style/Theme.CommuteSplashScreenTheme">
-=======
-            android:theme="@style/Theme.AdoPaws">
->>>>>>> dbd599f8ee0f731b43df75d53631deae05cb7082
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

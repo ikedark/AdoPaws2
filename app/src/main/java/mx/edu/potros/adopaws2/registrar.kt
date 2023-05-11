@@ -16,6 +16,8 @@ class registrar : AppCompatActivity(), View.OnClickListener {
     private var btnCrearCuenta: Button? = null
     private var progressDialog: ProgressDialog? = null
     private var firebaseAuth: FirebaseAuth? = null
+    var fechaS: String = ""
+    lateinit var eDate: EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrar)
@@ -25,6 +27,9 @@ class registrar : AppCompatActivity(), View.OnClickListener {
         btnCrearCuenta = findViewById<View>(R.id.btn_crearCuenta) as Button
         progressDialog = ProgressDialog(this)
         btnCrearCuenta!!.setOnClickListener(this)
+
+        eDate  = findViewById(R.id.et_Date)
+        eDate.setOnClickListener { showDatePickerDialog() }
     }
 
     private fun registrarUsuario() {
@@ -61,5 +66,14 @@ class registrar : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         registrarUsuario()
+    }
+
+    private fun showDatePickerDialog() {
+        val datePicker = DatePickerFragment { day, month, year -> onDateSelected(day, month, year) }
+        datePicker.show(supportFragmentManager, "datePicker")
+    }
+
+    fun onDateSelected(day:Int, month:Int, year:Int){
+        eDate.setText("$day/$month/$year")
     }
 }
