@@ -4,7 +4,7 @@
     <string name="email">Correo electrónico</string>
     <string name="contraseña">Contraseña</string>
     <string name="iniciarSesion">Iniciar Sesión</string>
-    <string name="pregunta">¿No tienes cuenta?</string>
+    <string name="pregunta">¿No tienes cuenta?                          </string>
     <string name="regist"><u>Registrate</u></string>
     <string name="ingresarFacebook">Ingresar con Facebook</string>
     <string name="ingresarGoogle">Ingresar con Google</string>
@@ -46,6 +46,8 @@
     <string name="cambiar_contraseña">Cambiar contraseña</string>
     <string name="cambiar_imagen_perfil">Cambiar imagen de perfil</string>
     <string name="cambiar_nombre">Cambiar nombre</string>
+    <string name="cambiar_datos">Editar datos de la cuenta</string>
+    <string name="eliminar_cuenta">Eliminar cuenta</string>
     <string name="idioma_elegido">Español (idioma del teléfono)</string>
     <string name="cambiar_tamaño_letra">Cambiar tamaño de letra</string>
     <string name="centros_ayuda">Centros de ayuda</string>

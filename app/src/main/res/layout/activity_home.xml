@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_smoak"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/salmon"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            android:src="@drawable/logo_texto_blanco"/>
+
+
+
+    </LinearLayout>
+
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="662dp"
+        android:numColumns="1"
+        android:paddingHorizontal="10dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="5"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:background="@color/orange">
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/casa"
+            android:background="@drawable/round_butonlogin"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:paddingHorizontal="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <ImageButton
+            android:id="@+id/btn_map"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ubicacion"
+            android:background="@drawable/round_butonlogin"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:paddingHorizontal="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <ImageButton
+            android:id="@+id/btn_warnings"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/aviso"
+            android:background="@drawable/round_butonlogin"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:paddingHorizontal="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <ImageButton
+            android:id="@+id/btn_messages"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/charla"
+            android:background="@drawable/round_butonlogin"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:paddingHorizontal="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <ImageButton
+            android:id="@+id/btn_profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/perfil"
+            android:background="@drawable/round_butonlogin"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:paddingHorizontal="10dp"
+            android:layout_marginRight="10dp"
+            />
+    </GridLayout>
+
+</LinearLayout>

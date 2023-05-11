@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige"
+    tools:context=".Register">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo_imagen"
+        android:layout_marginTop="90dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/dialogo"
+        android:textStyle="bold"
+        android:textColor="@color/brick"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/ingresa"
+        android:textColor="@color/brick"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/et_usuario"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="@string/usuario"
+        android:inputType="text"
+        android:background="@drawable/round_text"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:paddingHorizontal="@dimen/input_margin"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/et_edad"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/round_text"
+        android:textColor="@color/black"
+        android:inputType="date"
+        android:focusable="false"
+        android:clickable="false"
+        android:hint="@string/fecha_nacimiento"
+        android:paddingHorizontal="15dp"
+        android:layout_marginTop="25dp"
+
+        android:layout_gravity="center"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_text"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="@dimen/input_margin"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="@string/contraseña"
+        android:background="@drawable/round_text"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:paddingHorizontal="@dimen/input_margin"
+        android:textColor="@color/black"/>
+
+
+    <Button
+        android:id="@+id/btn_crearCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/crearCuenta"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:background="@drawable/round_butonlogin"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/pregunta2"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="65dp"/>
+
+        <Button
+            android:id="@+id/btn_iniciarSesión"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/iniciaSesión"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    </LinearLayout>
+
+</LinearLayout>
