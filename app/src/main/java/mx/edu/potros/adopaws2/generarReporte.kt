@@ -7,10 +7,15 @@ import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.Spinner
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.google.firebase.database.DatabaseReference
@@ -27,6 +32,7 @@ class generarReporte : AppCompatActivity() {
     private lateinit var et_lugar: EditText
     private lateinit var et_telefono: EditText
     private lateinit var petImage: ImageView
+    private lateinit var sexoP: TextView
     private val File = 1
     private lateinit var btn_guardar : Button
     private lateinit var dbRef : DatabaseReference
@@ -40,6 +46,32 @@ class generarReporte : AppCompatActivity() {
         et_telefono = findViewById(R.id.celP)
         btn_guardar = findViewById(R.id.btnReportar)
         petImage = findViewById(R.id.fotoP)
+
+        val spinner = findViewById<Spinner>(R.id.spinnerSexo)
+
+        //val lista = listOf("Macho", "Hembra")
+        val lista = resources.getStringArray(R.array.sexoOpciones)
+
+
+        val adaptador = ArrayAdapter(this, android.R.layout.simple_spinner_item, lista)
+        spinner.adapter = adaptador
+
+        spinner.onItemSelectedListener = object :
+            AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                TODO("Not yet implemented")
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
+
+        }
 
         dbRef = FirebaseDatabase.getInstance().getReference("Petlost")
 

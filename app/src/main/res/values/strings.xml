@@ -99,5 +99,10 @@
     <string name="privados">Privados</string>
 
     <string name="dialogo_2">Edita tus datos</string>
+    
+    <string-array name="sexoOpciones">
+        <item>Macho</item>
+        <item>Hembra</item>
+    </string-array>
 
 </resources>

@@ -198,12 +198,13 @@
         android:layout_marginLeft="30dp"
         android:text="@string/msj_reporte"
         android:textSize="11sp"
+        android:textColor="@color/black"
         android:textAlignment="center"/>
 
     <Button
         android:id="@+id/btnReportar"
-        android:layout_width="130dp"
-        android:layout_height="35dp"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
         android:text="@string/reportar"
         android:textSize="24sp"
         android:textAllCaps="false"
