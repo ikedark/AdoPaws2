@@ -27,9 +27,6 @@
             android:name=".home"
             android:exported="false" />
         <activity
-            android:name=".registrar_animal"
-            android:exported="false" />
-        <activity
             android:name=".Login"
             android:exported="false" />
         <activity

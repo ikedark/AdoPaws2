@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import androidx.appcompat.app.AlertDialog
-import mx.edu.potros.adopaws.DatePickerFragment
+import mx.edu.potros.adopaws2.DatePickerFragment
 
 class generarReporte2 : AppCompatActivity() {
     lateinit var fechaR : EditText

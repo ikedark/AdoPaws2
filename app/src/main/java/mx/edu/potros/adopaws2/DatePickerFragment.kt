@@ -1,4 +1,4 @@
-package mx.edu.potros.adopaws
+package mx.edu.potros.adopaws2
 
 import android.app.DatePickerDialog
 import android.app.Dialog
