@@ -45,17 +45,6 @@ class generarReporte : AppCompatActivity() {
 
         btn_guardar.setOnClickListener {
             saveInfoPet()
-        }
-
-        fechaR  = findViewById(R.id.fechaP)
-        fechaR.setOnClickListener { showDatePickerDialog() }
-
-
-
-        val btnRegresar : ImageButton = findViewById(R.id.btn_Regresar2)
-        val btnReportar: Button = findViewById(R.id.btnReportar)
-
-        btnReportar.setOnClickListener {
             val builder = AlertDialog.Builder(this@generarReporte)
 
             val view = layoutInflater.inflate(R.layout.dialog_reporte_creado, null)
@@ -77,6 +66,16 @@ class generarReporte : AppCompatActivity() {
             }
         }
 
+        fechaR  = findViewById(R.id.fechaP)
+        fechaR.setOnClickListener { showDatePickerDialog() }
+
+
+
+        val btnRegresar : ImageButton = findViewById(R.id.btn_Regresar2)
+
+
+
+
 
         btnRegresar.setOnClickListener {
             val intent: Intent = Intent(this, Encontrar_Mascota::class.java)
@@ -87,7 +86,7 @@ class generarReporte : AppCompatActivity() {
     private fun saveInfoPet() {
         val petName = et_petName.text.toString()
         val petDesc = et_description.text.toString()
-        val petLocate = et_petName.text.toString()
+        val petLocate = et_lugar.text.toString()
         val cellphone = et_telefono.text.toString()
         val dateLost = fechaR.text.toString()
         //petImage.setOnClickListener {

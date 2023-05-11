@@ -207,19 +207,21 @@
         android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
         android:text="@string/msj_reporte"
         android:textSize="11sp"
         android:textAlignment="center"/>
     
     <Button
         android:id="@+id/btnReportar"
-        android:layout_width="130dp"
-        android:layout_height="35dp"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
         android:text="@string/reportar"
         android:textSize="24sp"
         android:textAllCaps="false"
         android:textAlignment="center"
         android:layout_gravity="center"
+        android:gravity="center"
         android:layout_marginTop="20dp"
         android:textColor="@color/white"
         android:background="@drawable/round_button2"/>
