@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white_smoak"
-    tools:context=".configuracionGeneral"
+    tools:context=".perfil_usuario"
     tools:ignore="ExtraText">
 
     <!--LinearLayout que contiene:-->

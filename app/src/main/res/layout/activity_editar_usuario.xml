@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/beige"
-    tools:context=".Register">
+    tools:context=".editar_usuario">
 
     <ImageView
         android:layout_width="120dp"
@@ -88,7 +88,7 @@
         android:id="@+id/btn_crearCuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/crearCuenta"
+        android:text="@string/editarCuenta"
         android:textAllCaps="false"
         android:textSize="20sp"
         android:background="@drawable/round_butonlogin"
@@ -124,5 +124,6 @@
             android:textAppearance="?android:attr/textAppearanceSmall"/>
 
     </LinearLayout>
+
 
 </LinearLayout>

@@ -13,7 +13,8 @@
     <string name="ingresa">Ingresa tu nombre</string>
     <string name="usuario">Nombre de usuario</string>
     <string name="crearCuenta">Crear cuenta</string>
-    <string name="pregunta2">¿Ya tienes una cuenta?                               </string>
+    <string name="editarCuenta">Editar cuenta</string>
+    <string name="pregunta2">¿Ya tienes una cuenta?</string>
     <string name="iniciaSesión"><u>Inicia sesión</u></string>
 
     <string name="filter">Filtrar por</string>
