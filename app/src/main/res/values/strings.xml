@@ -13,7 +13,7 @@
     <string name="ingresa">Ingresa tu nombre</string>
     <string name="usuario">Nombre de usuario</string>
     <string name="crearCuenta">Crear cuenta</string>
-    <string name="pregunta2">¿Ya tienes una cuenta?</string>
+    <string name="pregunta2">¿Ya tienes una cuenta?                               </string>
     <string name="iniciaSesión"><u>Inicia sesión</u></string>
 
     <string name="filter">Filtrar por</string>
@@ -27,6 +27,7 @@
     <string name="iniciarChat">Iniciar Chat</string>
 
     <string name="fecha_nacimiento">Ingrese su fecha de nacimiento</string>
+    <string name="edad">Edad</string>
 
     <string name="configuracionGeneral">Configuración general</string>
 
@@ -95,4 +96,7 @@
     <string name="conversaciones">Conversaciones</string>
     <string name="comunidades">Comunidades</string>
     <string name="privados">Privados</string>
+
+    <string name="dialogo_2">Edita tus datos</string>
+
 </resources>
