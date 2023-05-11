@@ -32,7 +32,7 @@ class generarReporte : AppCompatActivity() {
     private lateinit var et_lugar: EditText
     private lateinit var et_telefono: EditText
     private lateinit var petImage: ImageView
-    private lateinit var sexoP: TextView
+    private lateinit var sexoP: Spinner
     private val File = 1
     private lateinit var btn_guardar : Button
     private lateinit var dbRef : DatabaseReference
@@ -64,7 +64,7 @@ class generarReporte : AppCompatActivity() {
                 position: Int,
                 id: Long
             ) {
-                TODO("Not yet implemented")
+                Toast.makeText(this@generarReporte, lista[position], Toast.LENGTH_LONG).show()
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
