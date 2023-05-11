@@ -7,10 +7,15 @@ import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.Spinner
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.google.firebase.database.DatabaseReference
@@ -27,6 +32,7 @@ class generarReporte : AppCompatActivity() {
     private lateinit var et_lugar: EditText
     private lateinit var et_telefono: EditText
     private lateinit var petImage: ImageView
+    private lateinit var sexoP: Spinner
     private val File = 1
     private lateinit var btn_guardar : Button
     private lateinit var dbRef : DatabaseReference
@@ -41,21 +47,36 @@ class generarReporte : AppCompatActivity() {
         btn_guardar = findViewById(R.id.btnReportar)
         petImage = findViewById(R.id.fotoP)
 
+        val spinner = findViewById<Spinner>(R.id.spinnerSexo)
+
+        //val lista = listOf("Macho", "Hembra")
+        val lista = resources.getStringArray(R.array.sexoOpciones)
+
+
+        val adaptador = ArrayAdapter(this, android.R.layout.simple_spinner_item, lista)
+        spinner.adapter = adaptador
+
+        spinner.onItemSelectedListener = object :
+            AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                Toast.makeText(this@generarReporte, lista[position], Toast.LENGTH_LONG).show()
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
+
+        }
+
         dbRef = FirebaseDatabase.getInstance().getReference("Petlost")
 
         btn_guardar.setOnClickListener {
             saveInfoPet()
-        }
-
-        fechaR  = findViewById(R.id.fechaP)
-        fechaR.setOnClickListener { showDatePickerDialog() }
-
-
-
-        val btnRegresar : ImageButton = findViewById(R.id.btn_Regresar2)
-        val btnReportar: Button = findViewById(R.id.btnReportar)
-
-        btnReportar.setOnClickListener {
             val builder = AlertDialog.Builder(this@generarReporte)
 
             val view = layoutInflater.inflate(R.layout.dialog_reporte_creado, null)
@@ -77,6 +98,16 @@ class generarReporte : AppCompatActivity() {
             }
         }
 
+        fechaR  = findViewById(R.id.fechaP)
+        fechaR.setOnClickListener { showDatePickerDialog() }
+
+
+
+        val btnRegresar : ImageButton = findViewById(R.id.btn_Regresar2)
+
+
+
+
 
         btnRegresar.setOnClickListener {
             val intent: Intent = Intent(this, Encontrar_Mascota::class.java)
@@ -87,7 +118,7 @@ class generarReporte : AppCompatActivity() {
     private fun saveInfoPet() {
         val petName = et_petName.text.toString()
         val petDesc = et_description.text.toString()
-        val petLocate = et_petName.text.toString()
+        val petLocate = et_lugar.text.toString()
         val cellphone = et_telefono.text.toString()
         val dateLost = fechaR.text.toString()
         //petImage.setOnClickListener {
