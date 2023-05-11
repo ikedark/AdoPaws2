@@ -13,8 +13,11 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AdoPaws2"
+        android:theme="@style/Theme.AdoPaws"
         tools:targetApi="31">
+        <activity
+            android:name=".generarReporte2"
+            android:exported="false" />
         <activity
             android:name=".registrar"
             android:exported="true" />
@@ -31,7 +34,11 @@
         <activity
             android:name=".Login"
             android:exported="true"
+<<<<<<< HEAD
             android:theme="@style/Theme.CommuteSplashScreenTheme">
+=======
+            android:theme="@style/Theme.AdoPaws">
+>>>>>>> dbd599f8ee0f731b43df75d53631deae05cb7082
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

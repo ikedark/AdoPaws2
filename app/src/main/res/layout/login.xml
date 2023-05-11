@@ -46,8 +46,8 @@
     <!--Botón Iniciar sesión-->
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="160dp"
-        android:layout_height="48dp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
         android:text="@string/iniciarSesion"
         android:background="@drawable/round_butonlogin"
         android:textColor="@color/white"
